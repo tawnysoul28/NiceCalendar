@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'NiceCalendar_Example' do
+  pod 'NiceCalendar', :path => '../'
+
+  target 'NiceCalendar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
