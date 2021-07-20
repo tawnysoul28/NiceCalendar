@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		12E5E0B8FA53B8206FE4A4B58D0CD83C /* NiceCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7FCEB6F2C7989D4A31B718879E79E /* NiceCalendar-dummy.m */; };
 		3865C238E857BC7B2109F5CA8FC9CF96 /* Pods-NiceCalendar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E8958750DBB3DE3E52FE328B250A1A /* Pods-NiceCalendar_Example-dummy.m */; };
+		40DCF2F326A6883700968A79 /* MonthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2E826A6883700968A79 /* MonthHeader.swift */; };
+		40DCF2F426A6883700968A79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2E926A6883700968A79 /* HomeViewController.swift */; };
+		40DCF2F526A6883700968A79 /* DayOfWeekRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2EA26A6883700968A79 /* DayOfWeekRow.swift */; };
+		40DCF2F626A6883700968A79 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2EB26A6883700968A79 /* CalendarViewController.swift */; };
+		40DCF2F726A6883700968A79 /* DayRangeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2EC26A6883700968A79 /* DayRangeIndicatorView.swift */; };
+		40DCF2F826A6883700968A79 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2ED26A6883700968A79 /* DayView.swift */; };
+		40DCF2F926A6883700968A79 /* PeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2EF26A6883700968A79 /* PeriodView.swift */; };
+		40DCF2FA26A6883700968A79 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2F026A6883700968A79 /* ConfirmationView.swift */; };
+		40DCF2FB26A6883700968A79 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCF2F226A6883700968A79 /* DateFormatterExtension.swift */; };
 		4859D5733E1A1CD18B2AB29C8A8EEE9D /* Pods-NiceCalendar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F11CCEDC880E5FC18A3291A38D31CF4A /* Pods-NiceCalendar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51750A5EB5166C228BA37406365B3171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		62A625FB09A67BE0BE5AF062CB5573C3 /* Pods-NiceCalendar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A73C5BAD5DAF40D96DF43597748134C1 /* Pods-NiceCalendar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EC4BB36474A58246257120668F9FC78 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D821C117CB7BEECBEC1A4A6ECA144D6 /* ReplaceMe.swift */; };
 		9FFDA61777BEEC61A94BE5A1CB4967CE /* Pods-NiceCalendar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C350AA5C80D6AD47C5B8BAB3A8731C /* Pods-NiceCalendar_Tests-dummy.m */; };
 		C54972F03F0C245AB31486FFB2C8D2D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C636DC778E3262B3A840A26EEF106982 /* NiceCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7442C4899B8E8210F7DA002BEF0A72B /* NiceCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,24 +47,32 @@
 /* Begin PBXFileReference section */
 		14EEF04B834530A1FF63580284646E36 /* NiceCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NiceCalendar.debug.xcconfig; sourceTree = "<group>"; };
 		188D93647247919C10A2FAC23E92E8B4 /* Pods-NiceCalendar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NiceCalendar_Example-frameworks.sh"; sourceTree = "<group>"; };
-		19F6FCEA064416B55E7B47D44E8A304F /* NiceCalendar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NiceCalendar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		19F6FCEA064416B55E7B47D44E8A304F /* NiceCalendar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NiceCalendar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2214809FBB43DD74E8FFAB3CF77B8139 /* Pods-NiceCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		274911CC65BF3E759A7F5631021D4AFA /* NiceCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NiceCalendar-prefix.pch"; sourceTree = "<group>"; };
-		2EA8B6CCDE4803873402C51536E5AB9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2EA8B6CCDE4803873402C51536E5AB9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3A8B0A5CD5B23A1148F5D1183EEEBF45 /* Pods-NiceCalendar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NiceCalendar_Tests.modulemap"; sourceTree = "<group>"; };
 		3E193053E0F47EE04C802B0372827C46 /* Pods-NiceCalendar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NiceCalendar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40DCF2E826A6883700968A79 /* MonthHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthHeader.swift; sourceTree = "<group>"; };
+		40DCF2E926A6883700968A79 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		40DCF2EA26A6883700968A79 /* DayOfWeekRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeekRow.swift; sourceTree = "<group>"; };
+		40DCF2EB26A6883700968A79 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		40DCF2EC26A6883700968A79 /* DayRangeIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayRangeIndicatorView.swift; sourceTree = "<group>"; };
+		40DCF2ED26A6883700968A79 /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		40DCF2EF26A6883700968A79 /* PeriodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodView.swift; sourceTree = "<group>"; };
+		40DCF2F026A6883700968A79 /* ConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		40DCF2F226A6883700968A79 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 		5B3DA123193A9F55489E2F1735D38B3B /* NiceCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NiceCalendar.release.xcconfig; sourceTree = "<group>"; };
 		5DAA5AFBA518873CA3109BD7054C57C9 /* Pods-NiceCalendar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceCalendar_Tests-Info.plist"; sourceTree = "<group>"; };
 		63E361354F4B7866FBE93D339B0BCB95 /* Pods-NiceCalendar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceCalendar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		67C350AA5C80D6AD47C5B8BAB3A8731C /* Pods-NiceCalendar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NiceCalendar_Tests-dummy.m"; sourceTree = "<group>"; };
 		72BF11A5A1B6B638ADCD65ADBC56DD65 /* NiceCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NiceCalendar-Info.plist"; sourceTree = "<group>"; };
 		7B8DC6293105E9469B8A91681390B4E3 /* Pods-NiceCalendar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NiceCalendar_Example.modulemap"; sourceTree = "<group>"; };
-		7DDD7ABE1E5D088B76BAEBABFE6857C8 /* Pods_NiceCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NiceCalendar_Example.framework; path = "Pods-NiceCalendar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DDD7ABE1E5D088B76BAEBABFE6857C8 /* Pods_NiceCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C725984AB4E06AF1C46761567A4C08B /* Pods-NiceCalendar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceCalendar_Example-Info.plist"; sourceTree = "<group>"; };
-		8D821C117CB7BEECBEC1A4A6ECA144D6 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NiceCalendar/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		986A5B316F6C1EADC39E92125EF532FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		986A5B316F6C1EADC39E92125EF532FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FB5C296B4877067C56746A703EFBEA0 /* Pods-NiceCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A2A93579DD1DFB7FF26E3B40870C79FF /* Pods-NiceCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A73C5BAD5DAF40D96DF43597748134C1 /* Pods-NiceCalendar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NiceCalendar_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -67,8 +83,8 @@
 		E19FEA3FEC2C7942A8B603022B9D2873 /* NiceCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NiceCalendar.modulemap; sourceTree = "<group>"; };
 		E7442C4899B8E8210F7DA002BEF0A72B /* NiceCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NiceCalendar-umbrella.h"; sourceTree = "<group>"; };
 		F11CCEDC880E5FC18A3291A38D31CF4A /* Pods-NiceCalendar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NiceCalendar_Example-umbrella.h"; sourceTree = "<group>"; };
-		FE04C5A237990A6A0B0171D4CC482CB2 /* NiceCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NiceCalendar.framework; path = NiceCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF96B748D847B480A52AC4E925520A8 /* Pods_NiceCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NiceCalendar_Tests.framework; path = "Pods-NiceCalendar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE04C5A237990A6A0B0171D4CC482CB2 /* NiceCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NiceCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF96B748D847B480A52AC4E925520A8 /* Pods_NiceCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFDD70BA58FEB5A59829D9E0A27BF81 /* Pods-NiceCalendar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceCalendar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,10 +148,58 @@
 			path = "Example/Pods/Target Support Files/NiceCalendar";
 			sourceTree = "<group>";
 		};
+		40DCF2C926A6859600968A79 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				40DCF2FE26A6889700968A79 /* ViewControllers */,
+				40DCF2FD26A6889700968A79 /* CalendarComponentViews */,
+				40DCF2EE26A6883700968A79 /* Views */,
+				40DCF2F126A6883700968A79 /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		40DCF2EE26A6883700968A79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40DCF2EF26A6883700968A79 /* PeriodView.swift */,
+				40DCF2F026A6883700968A79 /* ConfirmationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40DCF2F126A6883700968A79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40DCF2F226A6883700968A79 /* DateFormatterExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40DCF2FD26A6889700968A79 /* CalendarComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				40DCF2EA26A6883700968A79 /* DayOfWeekRow.swift */,
+				40DCF2EC26A6883700968A79 /* DayRangeIndicatorView.swift */,
+				40DCF2ED26A6883700968A79 /* DayView.swift */,
+				40DCF2E826A6883700968A79 /* MonthHeader.swift */,
+			);
+			path = CalendarComponentViews;
+			sourceTree = "<group>";
+		};
+		40DCF2FE26A6889700968A79 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				40DCF2E926A6883700968A79 /* HomeViewController.swift */,
+				40DCF2EB26A6883700968A79 /* CalendarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		882CEAC97CD0907DD9CA770A8457DC3E /* NiceCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				8D821C117CB7BEECBEC1A4A6ECA144D6 /* ReplaceMe.swift */,
+				40DCF2C926A6859600968A79 /* Source */,
 				931F3C20CF041A4CA2BE0FFF9F770F21 /* Pod */,
 				26CDB34C8DF9892C5813966803184646 /* Support Files */,
 			);
@@ -317,6 +381,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					154402934725C0CA7F9F7F8D8A22DA7B = {
+						LastSwiftMigration = 1160;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,8 +444,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DCF2F826A6883700968A79 /* DayView.swift in Sources */,
+				40DCF2F926A6883700968A79 /* PeriodView.swift in Sources */,
+				40DCF2FB26A6883700968A79 /* DateFormatterExtension.swift in Sources */,
+				40DCF2F626A6883700968A79 /* CalendarViewController.swift in Sources */,
+				40DCF2F726A6883700968A79 /* DayRangeIndicatorView.swift in Sources */,
+				40DCF2F526A6883700968A79 /* DayOfWeekRow.swift in Sources */,
 				12E5E0B8FA53B8206FE4A4B58D0CD83C /* NiceCalendar-dummy.m in Sources */,
-				8EC4BB36474A58246257120668F9FC78 /* ReplaceMe.swift in Sources */,
+				40DCF2F326A6883700968A79 /* MonthHeader.swift in Sources */,
+				40DCF2FA26A6883700968A79 /* ConfirmationView.swift in Sources */,
+				40DCF2F426A6883700968A79 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +499,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NiceCalendar_Example/Pods-NiceCalendar_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NiceCalendar_Example/Pods-NiceCalendar_Example.modulemap";
@@ -433,6 +510,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -456,7 +534,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NiceCalendar_Tests/Pods-NiceCalendar_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NiceCalendar_Tests/Pods-NiceCalendar_Tests.modulemap";
@@ -467,6 +545,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -489,7 +568,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NiceCalendar_Tests/Pods-NiceCalendar_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NiceCalendar_Tests/Pods-NiceCalendar_Tests.modulemap";
@@ -500,6 +579,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -511,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B3DA123193A9F55489E2F1735D38B3B /* NiceCalendar.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -523,13 +604,14 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NiceCalendar/NiceCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NiceCalendar/NiceCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NiceCalendar/NiceCalendar.modulemap";
 				PRODUCT_MODULE_NAME = NiceCalendar;
 				PRODUCT_NAME = NiceCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -587,13 +669,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -650,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -667,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14EEF04B834530A1FF63580284646E36 /* NiceCalendar.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -679,14 +761,16 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NiceCalendar/NiceCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NiceCalendar/NiceCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NiceCalendar/NiceCalendar.modulemap";
 				PRODUCT_MODULE_NAME = NiceCalendar;
 				PRODUCT_NAME = NiceCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -710,7 +794,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NiceCalendar_Example/Pods-NiceCalendar_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NiceCalendar_Example/Pods-NiceCalendar_Example.modulemap";
@@ -721,6 +805,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
