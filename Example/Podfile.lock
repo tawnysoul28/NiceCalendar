@@ -1,0 +1,16 @@
+PODS:
+  - NiceCalendar (0.1.0)
+
+DEPENDENCIES:
+  - NiceCalendar (from `../`)
+
+EXTERNAL SOURCES:
+  NiceCalendar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NiceCalendar: 9989bb57b33c9753873a8a24c324814fc6740a5a
+
+PODFILE CHECKSUM: b7344555fd422155f79fce0306da48cfbb04aadf
+
+COCOAPODS: 1.9.3

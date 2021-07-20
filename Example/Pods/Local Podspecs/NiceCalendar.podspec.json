@@ -1,0 +1,22 @@
+{
+  "name": "NiceCalendar",
+  "version": "0.1.0",
+  "summary": "A short description of NiceCalendar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tawnysoul28/NiceCalendar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tawnysoul28": "tawnysoul@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/tawnysoul28/NiceCalendar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "NiceCalendar/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module NiceCalendar {
+  umbrella header "NiceCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

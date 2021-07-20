@@ -1,0 +1,6 @@
+framework module Pods_NiceCalendar_Tests {
+  umbrella header "Pods-NiceCalendar_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
